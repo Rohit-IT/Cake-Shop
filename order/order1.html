@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="order.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER</title>
+</head>
+<body>
+    <style type="text/css">
+html { 
+  background: url(c12.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+    <div class="regform">
+        <h1>
+ PLACE ORDER</h1>
+</div>
+<div class="main">
+    
+        <form method="POST"action="order.php">
+            <div id="name">
+                <h2 class="name">
+Name </h2>
+<input class="firstname" type="text" name="Name"required><br>
+<!--
+
+                <label class="firstlabel">first name</label>
+                <input class="lastname" type="text" name="last_name"><br>
+                <label class="lastlabel">last name</label>
+            -->
+            </div>
+<h2 class="name">
+Address </h2>
+<input class="company" type="text" name="Address"required>
+            <h2 class="name">
+Email</h2>
+<input class="email" type="email" name="Email"required>
+            <h2 class="name">
+Phone</h2>
+<input class="Code" type="text" name="Phone"required>
+<!--
+            <label class="area-code">Area Code</label>
+            <input class="number" type="text" name="phone">
+            <label class="phone-number">Phone Number</label>
+        -->
+    
+    
+            <h2 class="name">
+Cake Type</h2>
+<select class="option"name="caketype"required>
+                <option selected="selected">--Choose option--</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Engagement">Engagement</option>
+                 <option value="Party">Party</option>
+                  <option value="Pastries">Pastries</option>
+            </select>
+    
+            <h2 id="coustomer">
+
+            Cake Flavour</h2>
+<select class="option"name="cakeflavour"required>
+                <option selected="selected">--Choose option--</option>
+                <option value="Vanilla">Vanilla</option>
+                <option value="Chocalate">Chocalate</option>
+                <option value="Black Forest">Black Forest</option>
+                 <option value="Butterscoth">Butterscoth</option>
+                  <option value="Dark Chocalate">Dark Chocalate</option>
+            </select>
+    
+            <h2 id="coustomer">
+Quantity</h2>
+
+    <select class="option"name="Quantity"required>
+                <option selected="selected">--Choose option--</option>
+                <option value="1 KG">1 KG</option>
+                <option value="2 KG">2 KG</option>
+                <option value="5 KG">5 KG</option>
+                 <option value="10 KG">10 KG</option>
+                  <option value="Double Layer">Double Layer</option>
+                   <option value="2 Paystries">2 Paystries</option>
+            </select>
+            <center><button onclick="myFunction()"name="ORDER"required>ORDER</button></center>
+
+<script>
+function myFunction() {
+  alert("Order Recived !!! You will Have It in Few Minutes....");
+}
+</script> 
+    
+    
+        </form>
+</div>
+</body>
+</html>
